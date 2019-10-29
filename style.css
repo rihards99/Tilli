@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+  line-height: 1.5;
+  background-color: #FBF8F3
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 4em;
+  align-content: center;
+  height: 90vh;
+  justify-items: center;
+  padding: 0px 32px;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+.top-left {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+.top-right {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  align-self: center;
+}
+
+.bottom-left {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 40%;
+}
+
+.bottom-middle {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.bottom-right {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.bottom-left, .bottom-middle, .bottom-right {
+  margin-bottom: 32px;
+}
+
+.container>h2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.donate {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-content: center;
+  height: 10vh;
+}
+
+h1, h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.1em
+}
+
+.top-left>p {
+  font-size: 1.2em
+}
