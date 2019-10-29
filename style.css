@@ -7,13 +7,13 @@ body {
   background-color: #FBF8F3
 }
 
+/* Grid setup */
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 2em;
-  grid-row-gap: 4em;
+  grid-column-gap: 1.25em;
+  grid-row-gap: 1.75em;
   align-content: center;
-  height: 90vh;
   justify-items: center;
   padding: 0px 32px;
   max-width: 1044px;
@@ -32,10 +32,13 @@ body {
   align-self: center;
 }
 
+.top-img {
+  width: auto;
+}
+
 .bottom-left {
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-bottom: 40%;
 }
 
 .bottom-middle {
@@ -57,11 +60,20 @@ body {
   grid-column-end: 7;
 }
 
-.donate {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-content: center;
-  height: 10vh;
+@media screen and (max-width: 720px)  {
+
+  .top-left, .top-right, .bottom-left, .bottom-middle, .bottom-right {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .bottom-left, .bottom-middle, .bottom-right {
+    grid-column-end: 7;
+  }
+
+  .top-img {
+    max-width: 80vw;
+  }
 }
 
 h1, h3 {
@@ -74,4 +86,9 @@ h1 {
 
 .top-left>p {
   font-size: 1.2em
+}
+
+.logo {
+  padding-top: 2em;
+  padding-bottom: 6em
 }
