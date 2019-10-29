@@ -65,12 +65,11 @@ body {
   .top-left, .top-right, .bottom-left, .bottom-middle, .bottom-right {
     grid-column-start: 1;
     grid-column-end: 7;
+    display: grid;
+    grid-column: 1/7;
+    justify-self: baseline
   }
-
-  .bottom-left, .bottom-middle, .bottom-right {
-    grid-column-end: 7;
-  }
-
+  
   .top-img {
     max-width: 80vw;
   }
