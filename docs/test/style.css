@@ -1,22 +1,68 @@
 /* colors */
 /* space */
+header {
+  background-color: #010922;
+  color: #fff;
+  padding-top: calc(0.5em * 10);
+  padding-bottom: calc(0.5em * 3);
+}
+
+header h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+header p {
+  padding-bottom: calc( 0.5em * 6);
+}
+
+header p:last-child {
+  font-size: .9em;
+  padding-top: calc(0.5em*4);
+}
+
 body {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #585757;
 }
 
-h2 {
-  font-size: 1.5em;
+h2, h3, h4, h6 {
+  color: #010922;
+  font-family: 'Rubik', sans-serif;
 }
 
-#hero {
-  background-color: #010922;
-  color: #F0EDEE;
-}
-
-#hero h1 {
-  color: #F0EDEE;
+main h2 {
   font-size: 2em;
+}
+
+main h3 {
+  font-size: 1.35em;
+}
+
+footer {
+  padding-top: calc( 0.5em * 4);
+  padding-bottom: calc( 0.5em * 4);
+}
+
+.last-block {
+  background-color: #F8F8F8;
+  padding-top: calc( 0.5em * 10);
+  padding-bottom: calc( 0.5em * 10);
+  margin-bottom: calc( 0.5em * 4);
+  margin-top: calc( 0.5em * 6);
+}
+
+.btn-primary {
+  background-color: #DD2D4A;
+  border: #DD2D4A 2px solid;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125em;
+}
+
+.btn-primary hover {
+  background-color: #010922;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,30 +2,72 @@
 $main-blue: #010922;
 $main-red: #DD2D4A;
 $main-pink: #FDD9DF;
-$grey-1: #585757;
-$grey-2: #949494;
-$grey-3: #F0EDEE;
-$grey-4: #F8F8F8;
-$light-grey: #F0EDEE;
+$grey: #585757;
+$grey1: #949494;
+$grey2: #F0EDEE;
+$grey3: #F8F8F8;
+$grey4: #F0EDEE;
+$white: #fff;
+
 /* space */
-$space: 8px;
+$space: 0.5em;
+
+header
+    background-color: $main-blue;
+    color: $white;
+    padding-top: calc(#{$space} * 10);
+    padding-bottom: calc(#{$space} * 3);
+    
+    h1  
+        font-family: 'Rubik', sans-serif;
+        font-size: 2em;
+        padding-bottom: $space;
+    p
+        padding-bottom: calc( #{$space} * 6 )
+    p:last-child
+        font-size: .9em;
+        padding-top: calc(#{$space}*4)
 
 body
     font-size: 16px;
-    font-family: sans-serif;
-    color: $grey-1;
+    font-family: 'Roboto', sans-serif;
+    color: $grey;
 
-h2
-    font-size: 1.5em
+h2, h3, h4, h6
+    color: $main-blue;
+    font-family: 'Rubik', sans-serif;
 
 
-#hero 
-    background-color: $main-blue;
-    color: $light-grey;
+main h2
+    font-size: 2em;
+    
 
-    h1
-        color: $light-grey;
-        font-size: 2em;
+main h3
+    font-size: 1.35em;
+
+footer
+    padding-top: calc( #{$space} * 4 );
+    padding-bottom: calc( #{$space} * 4 );
+
+.last-block
+    background-color: $grey3;
+    padding-top: calc( #{$space} * 10 );
+    padding-bottom: calc( #{$space} * 10 );
+    margin-bottom: calc( #{$space} * 4 );
+    margin-top: calc( #{$space} * 6 );
+
+.btn-primary
+    background-color: $main-red;
+    border: $main-red 2px solid;
+    color: $white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.125em;
+
+    hover
+        background-color: $main-blue;
+
+
+
 
 
 
