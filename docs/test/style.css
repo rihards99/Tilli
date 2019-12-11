@@ -9,8 +9,9 @@ header {
 
 header h1 {
   font-family: 'Rubik', sans-serif;
-  font-size: 2em;
+  font-size: 2.475em;
   padding-bottom: 0.5em;
+  padding-top: calc( 0.5em * 6);
 }
 
 header p {
@@ -38,7 +39,15 @@ main h2 {
 }
 
 main h3 {
-  font-size: 1.35em;
+  font-size: 1.525em;
+}
+
+.pt-72 {
+  padding-top: calc( 0.5em * 9);
+}
+
+.pb-72 {
+  padding-bottom: calc( 0.5em * 9);
 }
 
 footer {
@@ -52,17 +61,24 @@ footer {
   padding-bottom: calc( 0.5em * 10);
   margin-bottom: calc( 0.5em * 4);
   margin-top: calc( 0.5em * 6);
+  border-radius: 1em;
 }
 
-.btn-primary {
+.btn-tilli {
   background-color: #DD2D4A;
   border: #DD2D4A 2px solid;
   color: #fff;
   font-family: 'Rubik', sans-serif;
   font-size: 1.125em;
+  padding-bottom: calc( 0.5em * 2);
+  padding-top: calc( 0.5em * 2);
+  padding-right: calc( 0.5em * 4);
+  padding-left: calc( 0.5em * 4);
 }
 
-.btn-primary hover {
-  background-color: #010922;
+.btn-tilli:hover {
+  background-color: #B5253D;
+  border: 2px solid #B5253D;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
